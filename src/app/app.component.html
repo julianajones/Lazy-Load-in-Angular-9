@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <span>City quiz</span>
+</mat-toolbar>
+
+<button *ngIf="!quizStarted"
+        mat-raised-button color="primary"
+        class="start-quiz-button"
+        (click)="startQuiz()">Start quiz</button>
+
+<div class="test-card-container">
+  <ng-template #testContainer></ng-template>
+</div>
+
+<div class="quiz-card-container">
+  <ng-template #quizContainer></ng-template>
+</div>
